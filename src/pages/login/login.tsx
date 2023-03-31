@@ -1,7 +1,7 @@
 import { FaGoogle,  FaFacebook, FaApple} from 'react-icons/fa';
 import './login.css'
 import Logo from '../../assets/AdoteUmPet.svg'
-
+import { Link } from 'react-router-dom';
 
 export function Login() {
   return (
@@ -15,7 +15,9 @@ export function Login() {
         <div className='forgot-container'>
           <a href="#">esqueceu sua senha?</a>
         </div>
-        <button>Acessar</button>
+        <Link to="/home">
+            <button>Acessar</button>
+        </Link>
       </div>
       <div className='alternative'>
         <div className='divider'></div>
