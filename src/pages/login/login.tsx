@@ -1,7 +1,11 @@
 import { FaGoogle,  FaFacebook, FaApple} from 'react-icons/fa';
 import './login.css'
 import Logo from '../../assets/AdoteUmPet.svg'
-import { Link } from 'react-router-dom';
+
+const hello = () => {
+  
+  history.push('/home');
+};
 
 export function Login() {
   return (
@@ -15,9 +19,7 @@ export function Login() {
         <div className='forgot-container'>
           <a href="#">esqueceu sua senha?</a>
         </div>
-        <Link to="/home">
-            <button>Acessar</button>
-        </Link>
+        <button onClick={hello}>Acessar</button>
       </div>
       <div className='alternative'>
         <div className='divider'></div>
